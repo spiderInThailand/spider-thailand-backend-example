@@ -1,0 +1,119 @@
+general_system_error:
+  status_code: 200
+  error_code: 99999
+  error_message_th: ""
+  error_message_en: "General system error"
+
+# ============================================================
+# 10XXX
+#=============================================================
+user_not_login:
+  status_code: 401
+  error_code: 10000
+  error_message_th: ""
+  error_message_en: "user not login or expire, please login"
+
+insufficient_user_rights:
+  status_code: 401
+  error_code: 10001
+  error_message_th: ""
+  error_message_en: "insufficient user rights"
+
+request_data_fail:
+  status_code: 200
+  error_code: 10002
+  error_message_th: ""
+  error_message_en: "invalid data for calculate business logic"
+
+#=============================================================
+
+# ============================================================
+# 20XXX
+#=============================================================
+invalid_login_account:
+  status_code: 200
+  error_code: 20000
+  error_message_th: ""
+  error_message_en: "invalide username or password"
+
+decription_error:
+  status_code: 200
+  error_code: 20001
+  error_message_th: ""
+  error_message_en: "Cannot Decrypt due tacnical error"
+
+generate_rsa_error:
+  status_code: 200
+  error_code: 20002
+  error_message_th: ""
+  error_message_en: "Cannot generate public key"
+
+password_qualify_error:
+  status_code: 200
+  error_code: 20003
+  error_message_th: ""
+  error_message_en: "Password does not qualify"
+
+username_qualify_error:
+  status_code: 401
+  error_code: 20004
+  error_message_th: ""
+  error_message_en: "Username does not qualify"
+
+hashing_error:
+  status_code: 200
+  error_code: 20005
+  error_message_th: ""
+  error_message_en: "Cannot Hash due tacnical error"
+
+password_matching_error:
+  status_code: 200
+  error_code: 20006
+  error_message_th: ""
+  error_message_en: "Password not match"
+
+invalid_image_type:
+  status_code: 200
+  error_code: 20007
+  error_message_th: ""
+  error_message_en: "invlid image type"
+
+spider_not_found:
+  status_code: 200
+  error_code: 20008
+  error_message_th: ""
+  error_message_en: "spider info not found"
+
+delete_spider_failed:
+  status_code: 200
+  error_code: 20009
+  error_message_th: ""
+  error_message_en: "delete spider failed"
+
+geographies_not_found:
+  status_code: 200
+  error_code: 20010
+  error_message_th: ""
+  error_message_en: "province or district not found"
+
+request_data_not_found:
+  status_code: 200
+  error_code: 20011
+  error_message_th: ""
+  error_message_en: "required information is not available"
+#=============================================================
+
+# ============================================================
+# 21XXX
+#=============================================================
+error_spider_db:
+  status_code: 200
+  error_code: 21000
+  error_message_th: ""
+  error_message_en: "Error MongoDB connection"
+
+error_temp_db:
+  status_code: 200
+  error_code: 21001
+  error_message_th: ""
+  error_message_en: "Error Redis connection"

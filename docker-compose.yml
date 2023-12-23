@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  go-spider-be:
+    image: golang:1.20.6
+    container_name: go-spider-be
+    restart: always
+    working_dir: /app
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+      - ./_go:/g
+    tty: true
+  #   depends_on:
+  #     - mongo
+
+  # mongo:
+  #   image: mongo:latest
+  #   container_name: mongodb
+  #   restart: always
+  #   ports:
+  #     - "27017:27017"
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: spider
+  #     MONGO_INITDB_ROOT_PASSWORD: spiderMongo
+  #   tty: true
+  #   volumes:
+  #     - ./_data/mongodb:/data/db
+
+  # redis:
+  #   image: redis:7
+  #   container_name: redis
+  #   restart: always
+  #   ports:
+  #     - 6379:6379
+  #   tty: true
